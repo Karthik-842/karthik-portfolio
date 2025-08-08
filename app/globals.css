@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+*
+{
+  font-family: outfit, sans-serif;
+  scroll-behavior: smooth;
+}
