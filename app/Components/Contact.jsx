@@ -31,7 +31,7 @@ const Contact = () => {
     
     
   return (
-    <div className='w-full px-[12%] py-10 scroll-mt-20 bg-[url("/footer-bg-color.png")] bg-no-repeat bg-center bg-[length:90%_auto]' id='contact'>
+    <div className='w-full px-[12%] py-10 scroll-mt-20 bg-[url("/footer-bg-color.png")] bg-no-repeat bg-center bg-[length:90%_auto] flex flex-col items-center' id='contact'>
         <h4 className='mb-2 font-mono text-lg text-center'>Connect with me</h4>
         <h2 className='text-5xl font-bold text-center'>Get in touch</h2>
         <p className='max-w-2xl mx-auto mt-5 mb-12 text-center'>I'd love to hear from you! If you have any questions, comments or feedback, please use to the form below.</p>

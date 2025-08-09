@@ -9,7 +9,7 @@ const Header = () => {
             <Image src= {assets.profile_img} alt='' className='rounded-full w-32 h-32'/>
         </div>
         <h3 className="flex items-center gap-2 text-xl md:text-2xl mb-3">Hi! I'm 
-        <span className="font-extrabold bg-gradient-to-r from-[#ff6ec4] via-[#7873f5] to-[#4ADEDE] bg-clip-text text-transparent bg-[length:200%_200%] "> Karthik T </span> </h3> 
+        <span className="font-extrabold hero-text"> Karthik T </span> </h3> 
         <h1 className='text-3xl sm:text-6xl lg:text-[-66px] font-bold mb-2 font-outfit'>
             Full Stack Developer with a passion for building web applications.</h1>
         <p className='max-w-2xl mx-auto font-ovo'>I specialize in creating dynamic and responsive web applications using the latest technologies.</p>
