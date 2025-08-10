@@ -35,9 +35,15 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import avatar from './avatar.avif';
+import avatar_1 from './avatar_11.jpeg';
+import avatar_11 from './avatar_11.png';
 
 export const assets = {
     user_image,
+    avatar,
+    avatar_1,
+    avatar_11,
     code_icon,
     code_icon_dark,
     edu_icon,

@@ -11,8 +11,8 @@ const About = () => {
         <h2 className='mb-4 text-5xl text-center font-ovo'>About Me</h2>  
 
         <div className='flex flex-col items-center w-full gap-20 my-20 lg:flex-row'>
-            <div className='w-64 sm:w-80 rounded-3xl max-w-none'>
-                <Image src={assets.user_image} alt='user' className='w-full rounded-3xl' />
+            <div className='rounded-3xl sm:w-80 max-w-none animate-float'>
+                <Image src={assets.avatar_11} alt='user' className='w-full h-full shadow-2xl rounded-3xl ' />
             </div>
             <div className='flex-1'>
                 <p className='max-w-2xl mb-10 font-ovo'>Hello! I'm Karthik T, a Full Stack Developer with a passion for creating dynamic and responsive web applications. I specialize in both front-end and back-end development, ensuring that every project I work on is not only functional but also visually appealing.</p>
