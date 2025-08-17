@@ -1,4 +1,5 @@
 import user_image from './user-image.png';
+import { BriefcaseIcon, PencilIcon, CodeBracketIcon, RocketLaunchIcon } from "@heroicons/react/24/solid";
 import code_icon from './code-icon.png';
 import code_icon_dark from './code-icon-dark.png';
 import edu_icon from './edu-icon.png';
@@ -103,14 +104,14 @@ export const workData = [
         description: 'UI/UX Design',
         bgImage: '/work-4.png',
     },
-]
+];
 
 export const serviceData = [
     { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
     { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
     { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
     { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
-]
+];
 
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript, TypeScript, React Js, Next Js' },
@@ -196,4 +197,31 @@ export const tech = [
         )
     },
     
-]
+];
+
+export const events = [
+    { 
+      title: "Project Kickoff", 
+      date: "Jan 2025", 
+      description: "Initial meeting, goals set, and scope defined.", 
+      icon: <BriefcaseIcon className="w-6 h-6" /> 
+    },
+    { 
+      title: "Design Phase", 
+      date: "Feb 2025", 
+      description: "Wireframes, UI mockups, and design approvals.", 
+      icon: <PencilIcon className="w-6 h-6" /> 
+    },
+    { 
+      title: "Development", 
+      date: "Mar - Apr 2025", 
+      description: "Core features implemented and tested.", 
+      icon: <CodeBracketIcon className="w-6 h-6" /> 
+    },
+    { 
+      title: "Launch", 
+      date: "May 2025", 
+      description: "Project deployed to production environment.", 
+      icon: <RocketLaunchIcon className="w-6 h-6" /> 
+    },
+];

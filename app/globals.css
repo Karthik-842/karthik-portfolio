@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 *
 {
   font-family: outfit, sans-serif;
@@ -11,7 +12,6 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
   background-size: 500% auto;
   animation: glitter 5s ease-in-out infinite alternate;
 }
@@ -52,7 +52,7 @@
   }
 
   .animate-marquee {
-    animation: marquee 15s linear infinite ;
+    animation: marquee 25s linear infinite ;
   }
   
   @keyframes marquee-reverse {
@@ -65,5 +65,5 @@
   }
   
   .animate-marquee-reverse {
-    animation: marquee-reverse 15s linear infinite ;
+    animation: marquee-reverse 25s linear infinite ;
   }

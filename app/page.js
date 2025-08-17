@@ -8,6 +8,7 @@ import Projects from '@/components/Projects';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import Skills from './components/Skills';
+import TimeLine from './components/TimeLine';
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
         <Navbar />
         <Header />
         <About />
+        <TimeLine />
         <Skills/>
         <Projects />
         <Contact />
