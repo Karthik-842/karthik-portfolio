@@ -1,5 +1,5 @@
 import user_image from './user-image.png';
-import { BriefcaseIcon, PencilIcon, CodeBracketIcon, RocketLaunchIcon } from "@heroicons/react/24/solid";
+import { BriefcaseIcon,BookOpenIcon,AcademicCapIcon } from "@heroicons/react/24/solid";
 import code_icon from './code-icon.png';
 import code_icon_dark from './code-icon-dark.png';
 import edu_icon from './edu-icon.png';
@@ -200,28 +200,22 @@ export const tech = [
 ];
 
 export const events = [
-    { 
-      title: "Project Kickoff", 
-      date: "Jan 2025", 
-      description: "Initial meeting, goals set, and scope defined.", 
-      icon: <BriefcaseIcon className="w-6 h-6" /> 
-    },
-    { 
-      title: "Design Phase", 
-      date: "Feb 2025", 
-      description: "Wireframes, UI mockups, and design approvals.", 
-      icon: <PencilIcon className="w-6 h-6" /> 
-    },
-    { 
-      title: "Development", 
-      date: "Mar - Apr 2025", 
-      description: "Core features implemented and tested.", 
-      icon: <CodeBracketIcon className="w-6 h-6" /> 
-    },
-    { 
-      title: "Launch", 
-      date: "May 2025", 
-      description: "Project deployed to production environment.", 
-      icon: <RocketLaunchIcon className="w-6 h-6" /> 
-    },
+    {
+    title: "Schooling",
+    date: "2015 - 2019",
+    description: "Completed primary and secondary education with strong focus on science and mathematics.",
+    icon: <BookOpenIcon className="w-6 h-6" />,
+  },
+  {
+    title: "Engineering",
+    date: "2019 - 2023",
+    description: "Graduated with a Bachelor of Technology in Information Technology, specializing in programming and databases.",
+    icon: <AcademicCapIcon className="w-6 h-6" />,
+  },
+  {
+    title: "Work Experience",
+    date: "2023 - Present",
+    description: "Working as a developer at a leading software company.",
+    icon: <BriefcaseIcon className="w-6 h-6 " />,
+  },
 ];

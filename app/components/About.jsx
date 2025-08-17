@@ -9,7 +9,6 @@ const About = () => {
     <div id='about' className='w-full px-[12%] py-7 scroll-mt-20'>
         <h4 className='mb-2 text-lg text-center font-ovo'>Introduction</h4>
         <h2 className='mb-4 text-5xl text-center font-ovo'>About Me</h2>  
-
         <div className='flex flex-col items-center w-full gap-20 my-20 lg:flex-row'>
             <div className='rounded-3xl sm:w-80 max-w-none animate-float'>
                 <Image src={assets.avatar_11} alt='user' className='w-full h-full shadow-2xl rounded-3xl ' />
@@ -25,20 +24,8 @@ const About = () => {
                         </li>
                     ))}
                 </ul>
-
-                <h4 className='my-6 text-gray-700 font-ovo'>Tools I use</h4>
-                <ul className='flex items-center gap-3 sm:gap-5'>
-                    {toolsData.map((tool, index) => (
-                        <li className='flex items-center justify-center w-12 duration-500 border border-gray-400 rounded-lg shadow-md cursor-pointer sm:w-14 aspect-square hover:-translate-y-1 shadow-gray-300' key={index}>
-                            <Image src={tool} alt='tool' className='w-5 sm:w-7' />
-                        </li>
-                    ))}
-                </ul>
             </div>
-        </div>
-
-        
-        
+        </div>   
     </div>
   )
 }
