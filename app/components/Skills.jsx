@@ -8,12 +8,12 @@ const Skills = () => {
   return (
     <>
       {/* Skills */}
-      <div className="flex items-center justify-center w-full mt-10">
+      <div className="flex justify-center w-full pt-5 mt-10">
         <div className="flex flex-col items-center justify-center">
-          <h1 className="p-5 text-3xl">
+          <h1 className="p-2 text-3xl font-bold text-center">
             <span className="font-bold hero-text">Skills and Tools</span> 🚀
           </h1>
-          <div className="flex items-center justify-center w-full mt-10">
+          <div className="flex items-center justify-center w-full mt-5">
             <div className="max-w-5xl py-5 bg-white border border-gray-500 rounded-md w-[60%]">
               <div className="flex flex-col items-center justify-center gap-2 px-4 py-4">
                 <Marquee gradient={false} speed={60} className="py-3">
