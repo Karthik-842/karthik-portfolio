@@ -1,18 +1,47 @@
 import React from 'react'
 import Image from 'next/image';
+import { motion } from "framer-motion";
 import {assets} from '../assets/assets'; // Adjust the path as necessary 
 
 const Header = () => {
   return (
-    <div className='flex flex-col items-center justify-center w-11/12 h-screen max-w-3xl gap-4 mx-auto text-center'>
-        <div className='mt-20'>
+    <div className='flex flex-col items-center justify-center w-11/12 h-screen max-w-3xl gap-4 mx-auto text-center '>
+        <div className='mt-25'>
             <Image src= {assets.profile_img} alt='' className='w-32 h-32 rounded-full'/>
         </div>
-        <h3 className="flex items-center gap-2 mb-3 text-xl md:text-2xl">Hi! I'm 
-        <span className="font-extrabold hero-text"> Karthik T</span> </h3> 
-        <h1 className='text-3xl sm:text-6xl lg:text-[-66px] font-bold mb-2 font-outfit'>
-            Full Stack Developer with a passion for building web applications.</h1>
-        <p className='max-w-2xl mx-auto font-ovo'>I specialize in creating dynamic and responsive web applications using the latest technologies.</p>
+        <motion.h3
+        className="flex items-center justify-center gap-2 mb-3 text-xl md:text-2xl"
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        viewport={{ once: true }}
+      >
+        Hi! I'm{" "}
+        <span className="font-extrabold hero-text">Karthik T</span>
+      </motion.h3>
+
+      {/* Big Heading */}
+      <motion.h1
+        className="text-3xl sm:text-6xl lg:text-[66px] font-bold mb-4 font-outfit"
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+        viewport={{ once: true }}
+      >
+        Full Stack Developer with a passion for building web applications.
+      </motion.h1>
+
+      {/* Description */}
+      <motion.p
+        className="max-w-2xl mx-auto text-gray-700 font-ovo"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+        viewport={{ once: true }}
+      >
+        I specialize in creating dynamic and responsive web applications using
+        the latest technologies.
+      </motion.p>
 
         <div className='flex flex-col items-center gap-4 sm:flex-row '>
             <a href='#contact' className='flex items-center gap-2 px-10 py-3 mt-4 text-black transition duration-300 bg-white border border-gray-500 rounded-full hover:bg-lightHover dark:hover:bg-darkHover hover:text-black dark:hover:text-blue-600 font-ovo'
