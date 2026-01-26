@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from 'next/image';
 import { motion } from "framer-motion";
-import {assets} from '../assets/assets'; // Adjust the path as necessary 
-
+import {assets} from '../assets/assets'; 
+import Typewriter from 'typewriter-effect';
 const Header = () => {
   return (
     <div className='flex flex-col items-center justify-center w-11/12 h-screen max-w-3xl gap-4 mx-auto text-center '>
@@ -37,10 +37,17 @@ const Header = () => {
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
-        viewport={{ once: true }}
-      >
-        I specialize in creating dynamic and responsive web applications using
-        the latest technologies.
+        viewport={{ once: true }}>
+        <Typewriter
+        options={{
+          strings: [
+            "I specialize in creating dynamic and responsive web applications using the latest technologies."
+          ],
+          autoStart: true,
+          loop: true,
+        }}
+      />
+        
       </motion.p>
 
         <div className='flex flex-col items-center gap-4 sm:flex-row '>

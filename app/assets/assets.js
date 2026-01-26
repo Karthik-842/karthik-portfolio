@@ -85,25 +85,25 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
+        title: 'Cityscape Forecast',
+        description: 'Weather forecasting website',
         bgImage: '/work-1.png',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
-    },
-    {
-        title: 'Photography site',
-        description: 'Web Design',
+        title: 'To Do Sentinel',
+        description: 'Seamlessly Organize, Prioritize, and Complete Tasks.',
         bgImage: '/work-3.png',
     },
     {
-        title: 'UI/UX designing',
+        title: 'Niftique',
         description: 'UI/UX Design',
         bgImage: '/work-4.png',
     },
+    {
+        title: 'Adrig Technologies',
+        description: 'Website for Adrig Technologies.',
+        bgImage: '/work-2.png',
+    }
 ];
 
 export const serviceData = [
