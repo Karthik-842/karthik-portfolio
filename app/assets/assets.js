@@ -88,21 +88,25 @@ export const workData = [
         title: 'Cityscape Forecast',
         description: 'Weather forecasting website',
         bgImage: '/work-1.png',
+        link: 'https://cityscape-forecast-beta.vercel.app/'
     },
     {
         title: 'To Do Sentinel',
         description: 'Seamlessly Organize, Prioritize, and Complete Tasks.',
         bgImage: '/work-3.png',
+        link: 'https://to-do-sentinel-one.vercel.app/'
     },
     {
         title: 'Niftique',
         description: 'UI/UX Design',
         bgImage: '/work-4.png',
+        link: 'https://gr-ocify.vercel.app/'
     },
     {
         title: 'Adrig Technologies',
         description: 'Website for Adrig Technologies.',
         bgImage: '/work-2.png',
+        link: 'https://adrig-website.vercel.app/'
     }
 ];
 

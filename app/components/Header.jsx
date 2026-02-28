@@ -1,8 +1,16 @@
+"use client";
+
 import React from 'react'
 import Image from 'next/image';
 import { motion } from "framer-motion";
 import {assets} from '../assets/assets'; 
-import Typewriter from 'typewriter-effect';
+import dynamic from "next/dynamic";
+
+const Typewriter = dynamic(
+  () => import("typewriter-effect"),
+  { ssr: false }
+);
+
 const Header = () => {
   return (
     <div className='flex flex-col items-center justify-center w-11/12 h-screen max-w-3xl gap-4 mx-auto text-center '>

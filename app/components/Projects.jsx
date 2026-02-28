@@ -1,43 +1,113 @@
-import React from 'react'
-import Image from 'next/image';
-import { assets, workData } from '../assets/assets'
+import React from "react";
+import Image from "next/image";
+import { assets, workData } from "../assets/assets";
+import Link from "next/link";
 
 const Projects = () => {
   return (
-    <div id = 'projects' className='w-full px-[12%] py-10 scroll-mt-20'>
-        <h4 className='mb-2 font-sans text-lg text-center'>My Work</h4>
-        <h2 className='text-5xl font-semibold text-center'>Projects</h2>
-        <p className='max-w-2xl mx-auto mt-5 mb-12 font-serif text-center'>
-            Welcome to my portfolio! Here are some of the projects I have worked on. Each project showcases my skills in full-stack development, including front-end and back-end technologies. Feel free to explore them!
-        </p>
-
-
-        <div className='grid grid-cols-1 gap-6 my-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
-  {workData.map((project, index) => (
-    <div
-      key={index}
-      className='relative bg-center bg-no-repeat bg-cover rounded-lg cursor-pointer group aspect-square'
-      style={{ backgroundImage: `url(${project.bgImage})` }}
+    <section
+      id="projects"
+      className="w-full px-4 sm:px-6 md:px-10 lg:px-[10%] xl:px-[12%] 2xl:px-[15%] py-14 sm:py-20 scroll-mt-24"
     >
-        <div className='absolute flex items-center justify-center w-10/12 px-5 py-3 duration-500 -translate-x-1/2 translate-y-4 bg-white rounded-md shadow-lg bottom-6 left-1/2 group-hover:translate-y-0 hover:shadow-xl'>
-            <div>
-                <h2 className='font-semibold '>{project.title}</h2>
-                <p className='text-sm text-gray-700'>{project.description}</p>
-            </div>
-            <div className='flex items-center justify-center w-8 h-8 gap-2 ml-4 transition duration-300 bg-white border border-gray-300 rounded-full shadow-md aspect-auto group-hover:bg-indigo-200'>
-                <Image src={assets.send_icon} alt="Send Icon" className='w-5' />
-            </div>
-        </div>
-        </div>
-        ))}
-        </div>
+      {/* Heading */}
+      <div className="text-center">
+        <h4 className="mb-2 text-sm tracking-wide text-gray-600 sm:text-base md:text-lg">
+          My Work
+        </h4>
 
-        <a href = "" className='flex items-center justify-center gap-2 text-gray-700 w-max border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-gray-100 duration-500'>Show more
-            <Image src={assets.right_arrow_bold} alt="Right Arrow" className='inline w-4 ml-2' />
+        <h2 className="text-2xl font-semibold sm:text-3xl md:text-4xl lg:text-5xl">
+          Projects
+        </h2>
+
+        <p className="max-w-md mx-auto mt-4 text-sm leading-relaxed text-gray-600 sm:max-w-xl md:max-w-2xl sm:mt-6 sm:text-base">
+          Welcome to my portfolio! Here are some of the projects I have worked
+          on. Each project showcases my skills in full-stack development.
+        </p>
+      </div>
+
+      {/* Projects Grid */}
+
+      <div className="mx-auto mt-12 max-w-7xl">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {workData?.map((project, index) => (
+            <Link
+              key={index}
+              href={project.link}
+              target="_blank"
+              className="relative block overflow-hidden rounded-2xl group aspect-square"
+            >
+              {/* Image */}
+              <Image
+                src={project.bgImage}
+                alt={project.title}
+                fill
+                sizes="
+            (max-width: 640px) 100vw,
+            (max-width: 1024px) 50vw,
+            (max-width: 1280px) 33vw,
+            25vw
+          "
+                className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                priority={index < 2}
+              />
+
+              {/* Overlay */}
+              <div className="absolute inset-0 transition duration-500 bg-black/20 group-hover:bg-black/40" />
+
+              {/* Info Card */}
+              <div
+                className="
+            absolute bottom-4 mb-4 left-1/2 -translate-x-1/2
+            w-[88%]
+            bg-white/95 backdrop-blur-md
+            rounded-xl shadow-md
+            p-4
+            flex items-start justify-between gap-3
+            transition-all duration-500 ease-out
+            translate-y-6 group-hover:translate-y-0
+          "
+              >
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-sm font-semibold truncate sm:text-base">
+                    {project.title}
+                  </h3>
+                  <p className="mt-1 text-xs text-gray-600 sm:text-sm line-clamp-2">
+                    {project.description}
+                  </p>
+                </div>
+
+                <div className="flex items-center justify-center transition duration-300 bg-white border rounded-full shadow-sm w-9 h-9 shrink-0 group-hover:bg-indigo-500">
+                  <Image
+                    src={assets.send_icon}
+                    alt="Open Project"
+                    width={16}
+                    height={16}
+                    className="transition duration-300 group-hover:invert"
+                  />
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+
+      {/* Show More */}
+      <div className="flex justify-center mt-14 sm:mt-20">
+        <a
+          href="#"
+          className="flex items-center gap-2 px-6 py-2 text-sm transition duration-300 border border-gray-700 rounded-full sm:py-3 sm:px-10 sm:text-base hover:bg-gray-100"
+        >
+          Show more
+          <Image
+            src={assets.right_arrow_bold}
+            alt="Right Arrow"
+            width={16}
+            height={16}
+          />
         </a>
+      </div>
+    </section>
+  );
+};
 
-    </div>
-  )
-}
-
-export default Projects
+export default Projects;
