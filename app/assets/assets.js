@@ -39,9 +39,11 @@ import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import avatar from './avatar.avif';
 import avatar_1 from './avatar_11.jpeg';
 import avatar_11 from './avatar_11.png';
+import photo from './Karthik-Photo-Linkedin-modified.png';
 
 export const assets = {
     user_image,
+    photo,
     avatar,
     avatar_1,
     avatar_11,

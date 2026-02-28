@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <div className='flex flex-col items-center justify-center w-11/12 h-screen max-w-3xl gap-4 mx-auto text-center '>
         <div className='mt-25'>
-            <Image src= {assets.profile_img} alt='' className='w-32 h-32 rounded-full'/>
+            <Image src= {assets.photo} alt='' className='w-32 h-32 rounded-full'/>
         </div>
         <motion.h3
         className="flex items-center justify-center gap-2 mb-3 text-xl md:text-2xl"
