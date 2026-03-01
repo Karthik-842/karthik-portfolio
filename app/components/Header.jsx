@@ -61,7 +61,7 @@ const Header = () => {
         <div className='flex flex-col items-center gap-4 sm:flex-row '>
             <a href='#contact' className='flex items-center gap-2 px-10 py-3 mt-4 text-black transition duration-300 bg-white border border-gray-500 rounded-full hover:bg-lightHover dark:hover:bg-darkHover hover:text-black dark:hover:text-blue-600 font-ovo'
             >Contact Me <Image src={assets.right_arrow} className='w-4' alt="Contact" /></a>
-            <a href='/sample-resume.pdf' download
+            <a href='/KARTHIK_T_Resume.pdf' download="Karthik_T_Resume.pdf"
             className='flex items-center gap-2 px-10 py-3 mt-4 text-black transition duration-300 bg-white border border-gray-500 rounded-full hover:bg-lightHover dark:hover:bg-darkHover hover:text-black dark:hover:text-blue-600 font-ovo'
             >My Resume <Image src={assets.download_icon} className='w-4' alt="Download" /></a>
         </div>
